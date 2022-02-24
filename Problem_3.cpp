@@ -175,6 +175,7 @@ int main() {
     int choice; 
     std::cout << "Enter which function to use (Enter number)\n1 - RSHash\n2 - JSHash\n3 - PJWHash\n4 - ELFHash\n5 - BKDRHash\n6 - SDBMHash\n7 - DJBHash\n8 - DEKHash\n9 - APHash\n> "; 
     std::cin >> choice;
+    std::cout << "Generating 26^5 words with latin alphabet ...\nPlese wait\n";
     char a[6];
     for (int i1 = 97; i1 <= 122; i1++)
         for (int i2 = 97; i2 <= 122; i2++)
@@ -219,6 +220,7 @@ int main() {
                                 break;
                             }
                         }
+   std::cout << "Finished!\n";
 
     // set1.insert(RSHash("tailgate", 8));
     // set1.insert(RSHash("roundup", 7));
