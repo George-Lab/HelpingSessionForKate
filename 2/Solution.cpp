@@ -229,20 +229,20 @@ int main() {
     //////////////////////////////////////// SEQUENCE 3
     cout << "\n--------------Generating sequence-3 as difference between sequence-1 and sequence-2\n";
     if (sequence1.size() > sequence2.size()) {
-        for (int i = 0; i < sequence2.size(); i++) {
+        for (int i = 0; i < (int)sequence2.size(); i++) {
             sequence3.push_back((*it) - (*it2));
             it++; it2++;
         }
-        for (int i = 0; i < sequence1.size() - sequence2.size(); i++) {
+        for (int i = 0; i < (int)(sequence1.size() - sequence2.size()); i++) {
             sequence3.push_back((*it));
             it++;
         }
     } else {
-        for (int i = 0; i < sequence1.size(); i++) {
+        for (int i = 0; i < (int)sequence1.size(); i++) {
             sequence3.push_back((*it) - (*it2));
             it++; it2++;
         }
-        for (int i = 0; i < sequence2.size() - sequence1.size(); i++) {
+        for (int i = 0; i < (int)(sequence2.size() - sequence1.size()); i++) {
             sequence3.push_back(-(*it2));
             it2++;
         }
